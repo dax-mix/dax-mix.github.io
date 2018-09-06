@@ -1,0 +1,243 @@
+/*******************************************************************************
+MeyerWeb Reset
+*******************************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*******************************************************************************
+Theme Styles
+*******************************************************************************/
+
+html {
+  background: #000;
+}
+
+body {
+  min-height: 100%;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* https://stackoverflow.com/a/20352949/2128691 */
+body::after {
+  content: '';
+  display: block;
+  height: 3em; /* Set same as footer's height */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+  background: #000;
+  text-align: center;
+  font-size: 12px;
+}
+
+#footer-links ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+#footer-links li {
+  vertical-align: middle;
+}
+
+#footer-links a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#impressum {
+  font-family: serif;
+  font-size: 10px;
+}
+
+#impressum h2 {
+  color: white;
+}
+
+#impressum h4 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: darkred;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-weight: 700;
+  color:#222222;
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  padding-bottom: 10px;
+  font-size: 32px;
+  background: url('../images/bg_hr.png') repeat-x bottom;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  margin: 10px 0 15px 0;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul, ol, dl {
+  margin-bottom: 15px
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+ol {
+  list-style-position: inside;
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+hr {
+  height: 1px;
+  margin-bottom: 5px;
+  border: none;
+  background: url('../images/bg_hr.png') repeat-x center;
+}
+
+.button {
+  text-transform: uppercase;
+  background: #fff;
+  padding: 1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+.justifed {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hidden {
+  display: none;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
+/*******************************************************************************
+Full-Width Styles
+*******************************************************************************/
+section {
+  font-size: 1.25em;
+}
+
+#logo {
+  width: 80%;
+  border: none;
+  box-shadow: none;
+  display: block;
+  margin-top: 12em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#high-priority-information {
+  font-size: 2.5em;
+}
+
+.outer {
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  max-width: 70%;
+  padding: 15px 10px;
+  margin: 0 auto;
+}
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 900px) {
+}
+
+@media screen and (min-width: 600px) {
+}
