@@ -42,14 +42,28 @@ Theme Styles
 *******************************************************************************/
 
 html {
-  background: #000;
+  background: #0009;
 }
 
 body {
   min-height: 100%;
-  background: #000;
   color: #fff;
   overflow-x: hidden;
+}
+
+#nav {
+  margin-bottom: 2em;
+}
+
+#nav li {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+#nav li img {
+  width: 66%;
 }
 
 /* https://stackoverflow.com/a/20352949/2128691 */
@@ -194,7 +208,9 @@ hr {
 }
 
 .selected {
-  text-decoration: underline;
+  border-radius: 10px;
+  padding: 1em;
+  background: RGBA(255, 255, 255, 0.80);
 }
 
 /*******************************************************************************
@@ -205,17 +221,20 @@ section {
 }
 
 #logo {
+  opacity: 0.5;
+  transform: rotate(-85deg);
+  position: absolute;
+  top: -23em;
+  right: -36em;
   width: 80%;
   border: none;
   box-shadow: none;
   display: block;
-  margin-top: 12em;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #high-priority-information {
-  font-size: 2.5em;
+  margin-top: 10%;
+  font-size: 4em;
 }
 
 .outer {
