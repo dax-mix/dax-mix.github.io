@@ -56,7 +56,6 @@ body {
 }
 
 #nav li {
-  text-transform: uppercase;
   display: inline-block;
   margin-left: 2em;
   margin-right: 2em;
@@ -111,31 +110,31 @@ footer {
 }
 
 a {
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  color: darkred;
+  color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  font-family: inherit;
   letter-spacing: -1px;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 1.3em;
   font-weight: 700;
 }
 
 h2 {
   padding-bottom: 10px;
-  font-size: 32px;
+  font-size: 1.1em;
   background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1em;
 }
 
 h4 {
@@ -224,8 +223,8 @@ section {
   opacity: 0.5;
   transform: rotate(-85deg);
   position: absolute;
-  top: -23em;
-  right: -36em;
+  top: 0em;
+  right: 0em;
   width: 80%;
   border: none;
   box-shadow: none;
@@ -233,6 +232,7 @@ section {
 }
 
 #high-priority-information {
+  font-family: 'Metamorphous', cursive;
   margin-top: 10%;
   font-size: 4em;
 }
@@ -256,7 +256,26 @@ Small Device Styles
 }
 
 @media screen and (min-width: 900px) {
+  #nav li {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
 }
 
 @media screen and (min-width: 600px) {
+  #nav li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size:14px;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
 }
