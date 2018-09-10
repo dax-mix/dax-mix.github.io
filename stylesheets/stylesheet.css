@@ -42,13 +42,14 @@ Theme Styles
 *******************************************************************************/
 
 html {
-  background: #0009;
+  background: #001;
 }
 
 body {
   min-height: 100%;
   color: #fff;
   overflow-x: hidden;
+  overflow-y: hidden; /* careful...*/
 }
 
 #nav {
@@ -63,6 +64,7 @@ body {
 
 #nav li img {
   width: 66%;
+  cursor: pointer;
 }
 
 /* https://stackoverflow.com/a/20352949/2128691 */
@@ -74,10 +76,10 @@ body::after {
 
 footer {
   position: fixed;
+  padding-bottom: 5px;
   bottom: 0;
   width: 100%;
   height: 3em;
-  background: #000;
   text-align: center;
   font-size: 12px;
 }
@@ -206,12 +208,6 @@ hr {
   display: none;
 }
 
-.selected {
-  border-radius: 10px;
-  padding: 1em;
-  background: RGBA(255, 255, 255, 0.80);
-}
-
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -221,10 +217,10 @@ section {
 
 #logo {
   opacity: 0.5;
-  transform: rotate(-85deg);
+  transform: rotate(154deg);
   position: absolute;
-  top: 0em;
-  right: 0em;
+  top: -3em;
+  right: -10em;
   width: 80%;
   border: none;
   box-shadow: none;
@@ -252,30 +248,30 @@ section {
 Small Device Styles
 *******************************************************************************/
 
-@media screen and (min-width: 1200px) {
-}
-
-@media screen and (min-width: 900px) {
-  #nav li {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-}
-
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   #nav li {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    font-size:14px;
+@media (min-width: 900px) {
+  #logo {
+    width: 150%;
+    top: 1em;
+    right: -30em;
   }
 
-  .inner {
-    min-width: 320px;
-    max-width: 480px;
+  #nav li {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  #logo {
+    width: 80%;
+    top: -4em;
+    right: -10em;
   }
 }
