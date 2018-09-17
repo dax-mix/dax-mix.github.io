@@ -216,7 +216,7 @@ section {
 }
 
 #logo {
-  opacity: 0.5;
+  opacity: 0.25;
   transform: rotate(154deg);
   position: absolute;
   top: -3em;
