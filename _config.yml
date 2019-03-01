@@ -1,4 +1,3 @@
 name: Dax-Mix
-markdown: markdown
 plugins:
 - jekyll-haml
