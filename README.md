@@ -1,5 +1,5 @@
 ---
-title: Readme
+permalink: README.md
 ---
 
 # dax-mix.github.io
