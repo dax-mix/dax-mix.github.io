@@ -1,3 +1,4 @@
 name: Dax-Mix
+baseurl: ''
 plugins:
 - jekyll-haml
